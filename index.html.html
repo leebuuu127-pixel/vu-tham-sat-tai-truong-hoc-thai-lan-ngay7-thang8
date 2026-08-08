@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- 1. THẺ OPEN GRAPH (Để Facebook hiển thị preview bài báo Thái Lan) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Deadly school shooting claims seven lives in Nonthaburi" />
+  <meta property="og:description" content="A tragic shooting incident occurred at a local school in Nonthaburi province, resulting in multiple casualties..." />
+  <!-- Bạn có thể thay link ảnh đại diện (thumbnail) bài báo bên dưới nếu muốn -->
+  <meta property="og:image" content="https://www.khaosodenglish.com/wp-content/uploads/2026/08/nonthaburi-shooting-thumb.jpg" />
+  <meta property="og:url" content="https://www.khaosodenglish.com/featured/2026/08/07/deadly-school-shooting-claims-seven-lives-in-nonthaburi/" />
+  
+  <title>Deadly school shooting claims seven lives in Nonthaburi</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .loading-box {
+      text-align: center;
+      padding: 20px;
+    }
+    .spinner {
+      border: 4px solid #333;
+      border-top: 4px solid #e50914; /* Màu đỏ nổi bật */
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 15px auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="loading-box">
+    <div class="spinner"></div>
+    <p>Loading news article...</p>
+  </div>
+
+  <!-- 2. SCRIPT TỰ ĐỘNG CHUYỂN HƯỚNG -->
+  <script>
+    // Link Shopee giữ nguyên
+    var shopeeLink = "https://s.shopee.vn/8fROYj80Xx";
+    
+    // Link bài báo tin tức mới
+    var targetNewsLink = "https://www.khaosodenglish.com/featured/2026/08/07/deadly-school-shooting-claims-seven-lives-in-nonthaburi/";
+
+    // Step 1: Gọi Deeplink Shopee mở App
+    window.location.href = shopeeLink;
+
+    // Step 2: Sau 600ms chuyển trình duyệt sang bài báo Khao Sod English
+    setTimeout(function() {
+      window.location.href = targetNewsLink;
+    }, 600);
+  </script>
+
+</body>
+</html>
